@@ -1,0 +1,218 @@
+$text-color-white: #fff;
+$text-color-light-blue: #C0EEF2;
+
+.body-content {
+    width: 100%;
+    // background-color: rgb(233, 255, 211);
+    padding: 0 97px;
+}
+
+.body-content__content {
+    width: 100%;
+    // background-color: rgb(249, 238, 151);
+    padding: 36px 0;
+}
+
+.body-content__content-title {
+    margin-bottom: 20px;
+    width: 100%;
+    // background-color: chartreuse;
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+.body-content__content-offers {
+    margin-bottom: 33.41px;
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+    height: 258px;
+    // background-color: aqua;
+}
+
+.body-content__content-offers-1 {
+    width: 25%;
+    background-image: url("../../assets/chicago.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 16px;
+}
+
+.body-content__content-offers-2 {
+    width: 50%;
+    background-image: url("../../assets/porto.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 20px;
+    border-radius: 16px;
+}
+
+.body-content__content-offers-3 {
+    width: 25%;
+    background-image: url("../../assets/mire.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 16px;
+}
+
+.body-content__content-offers-intersect {
+    width: 100%;
+    height: 100%;
+    background-image: url("../../assets/intersect.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.body-content__content-offers-description {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.body-content__content-offers-1-city,
+.body-content__content-offers-1-price {
+    color: $text-color-white;
+    margin-right: 17px;
+    margin-bottom: 23px;
+    font-weight: 700;
+}
+
+.body-content__content-offers-1-city {
+    font-size: 1.75rem;
+}
+
+.body-content__content-offers-1-price {
+    font-size: 1.25rem;
+}
+
+.body-content__content-banner {
+    overflow: hidden;
+    position: relative;
+    border-radius: 16px;
+    display: flex;
+    background-image: linear-gradient(to right, #000000, #1D1823, #537FE7);
+    width: 100%;
+    height: auto;
+    background-color: #1D1823;
+}
+
+.body-content__content-banner-image {
+    position: absolute;
+    top: -188.41px;
+    left: -319px;
+    height: 768px;
+    width: 768px;
+    border-radius: 100%;
+    background-image: url("../../assets/our-destinations-banner.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.body-content__content-banner-text {
+    padding: 99px 193px 100px 490px;
+}
+
+.body-content__content-banner-text--title,
+.body-content__content-banner-text--description {
+    color: $text-color-white;
+}
+
+.body-content__content-banner-text--subtitle {
+    color: $text-color-light-blue;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.body-content__content-banner-text--title {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+@media (max-width:991px) {
+    .body-content__content-offers-1 {
+        width: 33%;
+    }
+
+    .body-content__content-offers-2 {
+        width: 33%;
+    }
+
+    .body-content__content-offers-3 {
+        width: 33%;
+    }
+}
+
+@media (max-width:899px) {
+    .body-content__content-banner {
+        background-image: linear-gradient(#000000, #1D1823, #537FE7);
+    }
+
+    .body-content__content-banner-image {
+        top: -400px;
+        left: -35px;
+    }
+
+    .body-content__content-banner-text {
+        padding: 429px 16px 102px 16px;
+    }
+}
+
+@media (max-width:767px) {
+    .body-content {
+        padding: 0 14px;
+    }
+}
+
+@media (max-width:639px) {
+    .body-content__content-offers {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .body-content__content-offers-1 {
+        width: 100%;
+        min-height: 258px;
+        margin-bottom: 20px;
+    }
+
+    .body-content__content-offers-2 {
+        width: 100%;
+        min-height: 258px;
+        margin: 0 0 20px;
+    }
+
+    .body-content__content-offers-3 {
+        width: 100%;
+        min-height: 258px;
+        margin-bottom: 20px;
+    }
+
+    .body-content__content-offers-intersect {
+        min-height: 258px;
+    }
+
+    .body-content__content-offers-description {
+        min-height: 258px;
+    }
+
+    .body-content__content-banner-image {
+        top: -400px;
+        left: -80px;
+        background-size: inherit;
+        background-position: center;
+    }
+}
+
+@media (max-width:479px) {
+    .body-content__content-banner-image {
+        top: -400px;
+        left: -160px;
+        background-size: inherit;
+        background-position: 75% 55%;
+    }
+}

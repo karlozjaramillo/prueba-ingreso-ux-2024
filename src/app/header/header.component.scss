@@ -1,0 +1,55 @@
+$color-red: #C20114;
+$text-color-white: white;
+
+.header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    min-height: 448px;
+    background-color: aqua;
+    background-image: url("../../assets/main-banner.jpg");
+    background-size: cover;
+    padding: 0 96px;
+}
+
+.header__content {
+    max-width: 500px;
+}
+
+.header__content-title,
+.header__content-description {
+    color: $text-color-white;
+}
+
+.header__content-title {
+    font-size: 2rem;
+}
+
+.header__content-description {
+    font-size: 1rem;
+}
+
+.header__content-button {
+    background-color: $color-red;
+    margin-top: 36px;
+    width: 152px;
+    height: 38px;
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+    color: $text-color-white;
+    font-size: 1.1rem;
+    font-weight: 600;
+
+    &:hover {
+        background-color: $text-color-white;
+        color: $color-red;
+    }
+}
+
+@media (max-width:767px){
+    .header{
+        padding: 0 14px;
+    }
+}
