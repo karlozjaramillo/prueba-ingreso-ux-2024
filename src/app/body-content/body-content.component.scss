@@ -31,6 +31,8 @@ $text-color-light-blue: #C0EEF2;
 }
 
 .body-content__content-offers-1 {
+    overflow: hidden;
+    position: relative;
     width: 25%;
     background-image: url("../../assets/chicago.jpg");
     background-size: cover;
@@ -39,6 +41,7 @@ $text-color-light-blue: #C0EEF2;
 }
 
 .body-content__content-offers-2 {
+    overflow: hidden;
     width: 50%;
     background-image: url("../../assets/porto.jpg");
     background-size: cover;
@@ -48,6 +51,7 @@ $text-color-light-blue: #C0EEF2;
 }
 
 .body-content__content-offers-3 {
+    overflow: hidden;
     width: 25%;
     background-image: url("../../assets/mire.jpg");
     background-size: cover;
@@ -72,20 +76,28 @@ $text-color-light-blue: #C0EEF2;
     align-items: flex-end;
 }
 
-.body-content__content-offers-1-city,
-.body-content__content-offers-1-price {
+.body-content__content-offers-city,
+.body-content__content-offers-price {
     color: $text-color-white;
     margin-right: 17px;
     margin-bottom: 23px;
     font-weight: 700;
 }
 
-.body-content__content-offers-1-city {
+.body-content__content-offers-city {
     font-size: 1.75rem;
 }
 
-.body-content__content-offers-1-price {
+.body-content__content-offers-price--from{
     font-size: 1.25rem;
+}
+
+.body-content__content-offers-price--600{
+    font-size: 1.375rem;
+}
+
+.body-content__content-offers-price--00{
+    font-size: 1rem;
 }
 
 .body-content__content-banner {
