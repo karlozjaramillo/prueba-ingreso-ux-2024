@@ -1,13 +1,16 @@
+// Colors
 $color-red: #C20114;
+
+// Fonts colors
 $text-color-white: #FFFFFF;
 
+// Header component
 .header {
     display: flex;
     align-items: center;
     width: 100%;
     height: auto;
     min-height: 448px;
-    background-color: aqua;
     background-image: url("../../assets/main-banner.jpg");
     background-size: cover;
     background-position-y: -10px;
@@ -53,6 +56,7 @@ $text-color-white: #FFFFFF;
     }
 }
 
+// Media Queries
 @media (max-width:767px){
     .header{
         padding: 0 14px;

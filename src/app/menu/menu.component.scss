@@ -1,5 +1,7 @@
+// Fonts colors
 $text-color-black: #181823;
 
+// Menu component
 .main-menu {
     width: 100%;
     height: auto;
@@ -69,6 +71,7 @@ $text-color-black: #181823;
     display: none;
 }
 
+// Media Queries
 @media (max-width:767px) {
     .main-menu {
         padding: 0 14px;

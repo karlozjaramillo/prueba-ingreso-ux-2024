@@ -1,7 +1,14 @@
+// Fonts colors
 $text-color-white: #fff;
 $text-color-light-blue: #C0EEF2;
 $text-color-primary: #181823;
 
+// Gradient colors
+$first-gradient-color: #000000;
+$second-gradient-color: #1D1823;
+$third-gradient-color: #537FE7;
+
+// Body-content component
 .body-content {
     width: 100%;
     padding: 36px 96px 60px 97px;
@@ -101,10 +108,10 @@ $text-color-primary: #181823;
     position: relative;
     border-radius: 16px;
     display: flex;
-    background-image: linear-gradient(to right, #000000, #1D1823, #537FE7);
+    background-image: linear-gradient(to right, $first-gradient-color, $second-gradient-color, $third-gradient-color);
     width: 100%;
     height: auto;
-    background-color: #1D1823;
+    background-color: $second-gradient-color;
 }
 
 .body-content__content-banner-image {
@@ -141,6 +148,7 @@ $text-color-primary: #181823;
     font-weight: 700;
 }
 
+// Media Queries
 @media (max-width:991px) {
     .body-content__content-offers-1 {
         width: 33%;
@@ -157,7 +165,7 @@ $text-color-primary: #181823;
 
 @media (max-width:899px) {
     .body-content__content-banner {
-        background-image: linear-gradient(#000000, #1D1823, #537FE7);
+        background-image: linear-gradient($first-gradient-color, $second-gradient-color, $third-gradient-color);
     }
 
     .body-content__content-banner-image {

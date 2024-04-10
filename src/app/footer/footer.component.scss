@@ -1,11 +1,16 @@
+// Fonts colors
 $primary-text-color: #181823;
 
+// Colors
+$color-gray-8: #E7E6F6;
+
+//Footer component
 .footer {
     display: flex;
     padding: 57px 96px 31px 98px;
     width: 100%;
     height: 398px;
-    background-color: #E7E6F6;
+    background-color: $color-gray-8;
 }
 
 .footer__logo {
@@ -13,7 +18,6 @@ $primary-text-color: #181823;
     align-items: center;
     height: 100%;
     width: 50%;
-    // background-color: #f2ff7f;
 
     img {
         width: 299px;
@@ -37,7 +41,6 @@ $primary-text-color: #181823;
     display: flex;
     flex-direction: row;
     width: 100%;
-    // background-color: #ff7f7f;
     height: 100%;
     color: $primary-text-color;
 
@@ -81,7 +84,6 @@ $primary-text-color: #181823;
     display: flex;
     align-items: flex-end;
     justify-content: space-around;
-    // background-color: #ff7f7f;
 }
 
 .footer__social-media-icon {
@@ -90,6 +92,8 @@ $primary-text-color: #181823;
     max-height: 50px;
 }
 
+
+// Media Queries
 @media (max-width:1050px) {
     .footer__links {
         a {
@@ -137,7 +141,6 @@ $primary-text-color: #181823;
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
-        // background-color: #ff7f7f;
         margin-bottom: 68px;
     }
 
@@ -148,7 +151,6 @@ $primary-text-color: #181823;
     .footer__links {
         display: flex;
         flex-direction: column;
-        // background-color: #ff7f7f;
 
         li {
             margin-left: 24px;

@@ -1,12 +1,16 @@
-$color-gray: #F1F0FF;
+// Colors
+$color-gray-9: #F1F0FF;
+
+// Fonts colors
 $text-color-gray: #9292A0;
 
+// Sub-footer component
 .sub-footer {
     display: flex;
     justify-content: space-between;
     width: 100%;
     height: 48px;
-    background-color: $color-gray;
+    background-color: $color-gray-9;
     padding: 16px 98px;
     font-size: 0.875rem;
 
@@ -23,6 +27,7 @@ $text-color-gray: #9292A0;
     }
 }
 
+// Media Queries
 @media (max-width:767px) {
     ul {
         margin: auto;
