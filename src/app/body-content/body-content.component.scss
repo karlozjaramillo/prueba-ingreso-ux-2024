@@ -33,33 +33,35 @@ $third-gradient-color: #537FE7;
     height: 258px;
 }
 
-.body-content__content-offers-1 {
+.body-content__content-offers-1,
+.body-content__content-offers-2,
+.body-content__content-offers-3 {
     overflow: hidden;
-    position: relative;
-    width: 25%;
-    background-image: url("../../assets/chicago.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 16px;
+}
+
+.body-content__content-offers-1 {
+    width: 25%;
+    background-image: url("../../assets/chicago.jpg");
+    background-size: 140% 100%;
+    background-position: 13% 100%;
 }
 
 .body-content__content-offers-2 {
-    overflow: hidden;
     width: 50%;
     background-image: url("../../assets/porto.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
     margin: 0 20px;
-    border-radius: 16px;
+    background-size: 100% 165%;
+    background-position: 0% 45%;
 }
 
 .body-content__content-offers-3 {
-    overflow: hidden;
     width: 25%;
     background-image: url("../../assets/mire.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 16px;
+    background-size: 150% 100%;
+    background-position: 49% 100%;
 }
 
 .body-content__content-offers-intersect {
@@ -77,29 +79,29 @@ $third-gradient-color: #537FE7;
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-end;
+    padding: 0 17px 23px 0;
 }
 
 .body-content__content-offers-city,
 .body-content__content-offers-price {
     color: $text-color-white;
-    margin-right: 17px;
-    margin-bottom: 23px;
     font-weight: 700;
 }
 
 .body-content__content-offers-city {
     font-size: 1.75rem;
+    margin-bottom: 9px;
 }
 
-.body-content__content-offers-price--from{
+.body-content__content-offers-price--from {
     font-size: 1.25rem;
 }
 
-.body-content__content-offers-price--600{
+.body-content__content-offers-price--600 {
     font-size: 1.375rem;
 }
 
-.body-content__content-offers-price--00{
+.body-content__content-offers-price--00 {
     font-size: 1rem;
 }
 
@@ -110,7 +112,7 @@ $third-gradient-color: #537FE7;
     display: flex;
     background-image: linear-gradient(to right, $first-gradient-color, $second-gradient-color, $third-gradient-color);
     width: 100%;
-    height: auto;
+    min-height: 386px;
     background-color: $second-gradient-color;
 }
 
@@ -122,13 +124,13 @@ $third-gradient-color: #537FE7;
     height: 767.86px;
     border-radius: 100%;
     background-image: url("../../assets/our-destinations-banner.jpg");
-    background-size: cover;
+    background-size: 110%;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: 95% 55%;
 }
 
 .body-content__content-banner-text {
-    padding: 99px 193px 100px 490px;
+    padding: 99.05px 193.16px 100.22px 528.65px;
 }
 
 .body-content__content-banner-text--title,
@@ -136,16 +138,21 @@ $third-gradient-color: #537FE7;
     color: $text-color-white;
 }
 
-.body-content__content-banner-text--subtitle {
-    color: $text-color-light-blue;
-    font-size: 2rem;
+.body-content__content-banner-text--description {
+    font-size: 1.125rem;
     font-weight: 400;
-    margin-bottom: 30px;
 }
 
 .body-content__content-banner-text--title {
     font-size: 2rem;
     font-weight: 700;
+}
+
+.body-content__content-banner-text--subtitle {
+    color: $text-color-light-blue;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 30px;
 }
 
 // Media Queries
@@ -190,22 +197,20 @@ $third-gradient-color: #537FE7;
         height: auto;
     }
 
-    .body-content__content-offers-1 {
+    .body-content__content-offers-1,
+    .body-content__content-offers-2,
+    .body-content__content-offers-3 {
         width: 100%;
         min-height: 258px;
+    }
+
+    .body-content__content-offers-1,
+    .body-content__content-offers-3 {
         margin-bottom: 20px;
     }
 
     .body-content__content-offers-2 {
-        width: 100%;
-        min-height: 258px;
         margin: 0 0 20px;
-    }
-
-    .body-content__content-offers-3 {
-        width: 100%;
-        min-height: 258px;
-        margin-bottom: 20px;
     }
 
     .body-content__content-offers-intersect {
@@ -230,5 +235,13 @@ $third-gradient-color: #537FE7;
         left: -160px;
         background-size: inherit;
         background-position: 75% 55%;
+    }
+}
+
+@media (max-width:414px) {
+    .body-content__content-banner-image {
+        top: -403px;
+        left: -191px;
+        background-position: 100% 55%;
     }
 }
