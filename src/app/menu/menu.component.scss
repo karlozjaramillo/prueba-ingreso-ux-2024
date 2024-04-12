@@ -19,7 +19,10 @@ $text-color-black: #181823;
 
 .main-menu__logo {
     margin-right: 32px;
-    height: 49px;
+
+    img {
+        height: 49px;
+    }
 }
 
 .main-menu__navbar {
@@ -106,8 +109,21 @@ $text-color-black: #181823;
     }
 }
 
-@media (max-width:480px){
+@media (max-width:480px) {
     .main-menu__content {
         width: 100%;
+    }
+}
+
+@media (max-width:414px) {
+    .main-menu__content {
+        padding: 9px 0 8px;
+    }
+
+    .main-menu__logo {
+        img {
+            width: 103px;
+            height: 33px;
+        }
     }
 }
