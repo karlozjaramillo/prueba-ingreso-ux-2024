@@ -57,18 +57,25 @@ $text-color-white: #FFFFFF;
 }
 
 // Media Queries
-@media (max-width:767px){
-    .header{
+@media (max-width:767px) {
+    .header {
         padding: 0 14px;
     }
 }
 
-@media (max-width:479px){
+@media (max-width:479px) {
     .header__content-title {
         font-size: 2rem;
     }
-    
+
     .header__content-description {
         font-size: 0.875rem;
+    }
+}
+
+@media (max-width:414px) {
+    .header {
+        background-position-x: 48%;
+        background-size: 345% 212%;
     }
 }
