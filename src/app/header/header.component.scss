@@ -57,13 +57,33 @@ $text-color-white: #FFFFFF;
 }
 
 // Media Queries
-@media (max-width:767px) {
+@media (max-width:1200px) {
     .header {
-        padding: 0 14px;
+        background-position-x: 50%;
+        background-size: 130% 210%;
     }
 }
 
-@media (max-width:479px) {
+@media (max-width:768px) {
+    .header {
+        padding: 0 14px;
+        background-size: 160% 210%;
+    }
+}
+
+@media (max-width:640px) {
+    .header {
+        background-position-x: 50%;
+        background-size: 180% 210%;
+    }
+}
+
+@media (max-width:480px) {
+    .header {
+        background-position-x: 50%;
+        background-size: 280% 212%;
+    }
+
     .header__content-title {
         font-size: 2rem;
     }

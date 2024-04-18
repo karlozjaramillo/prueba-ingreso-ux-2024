@@ -43,11 +43,16 @@ $text-color-gray: #9292A0;
 }
 
 // Media Queries
-@media (max-width:767px) {
+@media (max-width:768px) {
+    .sub-footer {
+        padding: 16px 14px;
+    }
 }
 
-@media (max-width:673px) {
-    .sub-footer {
-        padding: 16px 20px;
+@media (max-width:480px) {
+    .sub-footer{
+        padding: 10px 14px;
+        min-height: 62px;
+        line-height: 1.5rem;
     }
 }
