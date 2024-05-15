@@ -1,6 +1,10 @@
 // Fonts colors
 $text-color-black: #181823;
 
+// Colors
+$background-white: #FFF;
+$background-black: #181823;
+
 // Menu component
 .main-menu {
     width: 100%;
@@ -84,7 +88,7 @@ $text-color-black: #181823;
     visibility: hidden;
     width: 250px;
     height: 189px;
-    background-color: white;
+    background-color: $background-white;
     box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.2);
     color: $text-color-black;
     font-size: 1rem;
@@ -164,7 +168,7 @@ $text-color-black: #181823;
     position: absolute;
     width: 100%;
     height: 2px;
-    background-color: $text-color-black;
+    background-color: $background-black;
     transition-duration: .25s;
 }
 
@@ -188,21 +192,30 @@ $text-color-black: #181823;
     height: 100%;
     margin: 0;
     list-style: none;
-    background-color: #ECEFF1;
+    background-color: $background-white;
     box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
     transition-duration: .25s;
     z-index: 1;
 }
 
+.menu__box__list {
+    padding: 0 14px;
+
+    ul {
+        list-style-type: none;
+    }
+}
+
 .menu__item {
     display: block;
-    padding: 12px 24px;
-    color: #333;
+    padding: 25px 0;
+    color: $text-color-black;
     font-size: 1.25rem;
     font-weight: 400;
     line-height: 23.44px;
     text-decoration: none;
     transition-duration: .25s;
+    border-bottom: 1px solid #B2B2C1;
 }
 
 .menu__item:hover {
@@ -231,7 +244,7 @@ $text-color-black: #181823;
 
     .main-menu__box-content {
         display: flex;
-        padding: 10.33px 14px 0 40%;
+        padding: 10.33px 14px 0 35%;
         justify-content: space-between;
         margin-bottom: 45.41px;
     }
