@@ -209,6 +209,20 @@ $text-color-black: #181823;
 }
 
 // Media Queries
+@media (max-width:992px) {
+    .main-menu__items__list-item--mmb {
+        padding: 0 28px;
+    }
+
+    .main-menu__items__list-link {
+        font-size: 0.75rem;
+    }
+
+    .main-menu__lang-selector__text {
+        font-size: 0.625rem;
+    }
+}
+
 @media (max-width:768px) {
     .main-menu {
         padding: 0 14px;
@@ -275,6 +289,4 @@ $text-color-black: #181823;
     }
 }
 
-@media (max-width:414px) {
-    
-}
+@media (max-width:414px) {}
