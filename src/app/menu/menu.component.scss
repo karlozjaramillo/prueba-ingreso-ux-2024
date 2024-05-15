@@ -151,7 +151,7 @@ $text-color-black: #181823;
 .menu__btn {
     display: flex;
     align-items: center;
-    position: fixed;
+    position: absolute;
     top: 30px;
     cursor: pointer;
     z-index: 2;
@@ -198,8 +198,9 @@ $text-color-black: #181823;
     display: block;
     padding: 12px 24px;
     color: #333;
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 23.44px;
     text-decoration: none;
     transition-duration: .25s;
 }
@@ -232,6 +233,7 @@ $text-color-black: #181823;
         display: flex;
         padding: 10.33px 14px 0 40%;
         justify-content: space-between;
+        margin-bottom: 45.41px;
     }
 
     .main-menu__hamburger-menu {
