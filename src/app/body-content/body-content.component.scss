@@ -11,7 +11,7 @@ $third-gradient-color: #537FE7;
 // Body-content component
 .body-content {
     width: 100%;
-    padding: 36px 96px 60px 97px;
+    padding: 36px 6.667% 60px 6.667%;
 }
 
 .body-content__content {
@@ -44,16 +44,16 @@ $third-gradient-color: #537FE7;
 }
 
 .body-content__content-offers-1 {
-    width: 25%;
-    max-width: 296px;
+    width: 24.5856%;
+    // max-width: 296px;
     background-image: url("../../assets/chicago.jpg");
     background-size: 140% 100%;
     background-position: 13% 100%;
 }
 
 .body-content__content-offers-2 {
-    width: 50%;
-    max-width: 614px;
+    width: 50.828%;
+    // max-width: 614px;
     background-image: url("../../assets/porto.jpg");
     margin: 0 20px;
     background-size: 100% 165%;
@@ -61,8 +61,8 @@ $third-gradient-color: #537FE7;
 }
 
 .body-content__content-offers-3 {
-    width: 25%;
-    max-width: 297px;
+    width: 24.5856%;
+    // max-width: 297px;
     background-image: url("../../assets/mire.jpg");
     background-size: 150% 100%;
     background-position: 49% 100%;
@@ -120,8 +120,8 @@ $third-gradient-color: #537FE7;
     display: flex;
     background-image: linear-gradient(to right, $first-gradient-color, $second-gradient-color, $third-gradient-color);
     width: 100%;
-    max-width: 1247.41px;
-    min-height: 386px;
+    // max-width: 1247.41px;
+    // min-height: 386px;
     background-color: $second-gradient-color;
 }
 
@@ -168,6 +168,13 @@ $third-gradient-color: #537FE7;
 }
 
 // Media Queries
+@media (min-width:1200px) {
+    .body-content {
+        width: 100%;
+        padding: 36px 6.667% 60px 6.667%;
+    }
+}
+
 @media (max-width:1200px) {
     .body-content__content-banner-image {
         top: -170px;
@@ -198,7 +205,7 @@ $third-gradient-color: #537FE7;
 
     .body-content__content-banner-image {
         top: -400px;
-        left: -35px;
+        left: auto;
     }
 
     .body-content__content-banner-text {
