@@ -84,7 +84,7 @@ $background-black: #181823;
     display: inline-block;
 }
 
-.main-menu__tooltip .main-menu__tooltiptext {
+.main-menu__tooltip .main-menu__tooltip-text {
     visibility: hidden;
     width: 250px;
     height: 189px;
@@ -113,7 +113,7 @@ $background-black: #181823;
 
 }
 
-.main-menu__tooltip .main-menu__tooltiptext::after {
+.main-menu__tooltip .main-menu__tooltip-text::after {
     content: "";
     position: absolute;
     bottom: 100%;
@@ -124,7 +124,7 @@ $background-black: #181823;
     border-color: transparent transparent white transparent;
 }
 
-.main-menu__tooltip:hover .main-menu__tooltiptext {
+.main-menu__tooltip:hover .main-menu__tooltip-text {
     visibility: visible;
 }
 
