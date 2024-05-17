@@ -112,7 +112,7 @@ $color-gray-8: #E7E6F6;
     }
 
     .footer__links-title {
-        font-size: 1.125rem;
+        font-size: 1rem;
     }
 
     .footer__links-follow-us {
@@ -125,28 +125,34 @@ $color-gray-8: #E7E6F6;
         height: 370px;
     }
 
+    .footer__logo {
+        img {
+            width: 60%;
+        }
+    }
+
     .footer__links {
         a {
-            font-size: 0.875rem;
+            font-size: 0.75rem;
         }
 
         li {
-            margin-bottom: 10px;
+            margin-bottom: 8px;
         }
     }
 
     .footer__links-title {
-        font-size: 1rem;
+        font-size: 0.75rem;
     }
 
     .footer__links-follow-us {
-        font-size: 0.875rem;
+        font-size: 0.75rem;
         margin-top: 40px;
     }
 
     .footer__social-media-icon {
-        min-height: 40px;
-        min-width: 40px;
+        min-height: 30px;
+        min-width: 30px;
     }
 }
 
@@ -240,6 +246,12 @@ $color-gray-8: #E7E6F6;
     .footer__links-title {
         font-size: 1.125rem;
         line-height: 21.09px;
+    }
+
+    .footer__logo {
+        img {
+            width: 94%;
+        }
     }
 }
 
