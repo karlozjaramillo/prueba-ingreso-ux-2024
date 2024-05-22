@@ -120,22 +120,23 @@ $third-gradient-color: #537FE7;
     display: flex;
     background-image: linear-gradient(to right, $first-gradient-color, $second-gradient-color, $third-gradient-color);
     width: 100%;
-    // max-width: 1247.41px;
-    // min-height: 386px;
     background-color: $second-gradient-color;
 }
 
 .body-content__content-banner-image {
+    overflow: hidden;
     position: absolute;
     top: -188.41px;
     left: -319px;
     width: 768px;
-    height: 767.86px;
+    height: 768px;
     border-radius: 100%;
-    background-image: url("../../assets/our-destinations-banner.jpg");
-    background-size: 110%;
-    background-repeat: no-repeat;
-    background-position: 95% 55%;
+
+    img {
+        position: relative;
+        top: -319px;
+        left: -120px;
+    }
 }
 
 .body-content__content-banner-text {
@@ -187,6 +188,7 @@ $third-gradient-color: #537FE7;
 }
 
 @media (max-width:992px) {
+
     .body-content__content-offers-1,
     .body-content__content-offers-2,
     .body-content__content-offers-3 {
@@ -284,7 +286,7 @@ $third-gradient-color: #537FE7;
         margin-bottom: 0;
     }
 
-    .body-content__content-banner{
+    .body-content__content-banner {
         max-height: 722px;
     }
 
