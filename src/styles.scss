@@ -1,17 +1,1 @@
-// Typography
-@font-face {
-    font-family: Roboto;
-    src: url(Roboto-Regular.ttf);
-  }
-$roboto-font: Roboto, sans-serif;
-
-// General Styles
-* {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    vertical-align: baseline;
-    font-family: $roboto-font;
-}
+@import '../src/assets/scss/init/reset.scss';
