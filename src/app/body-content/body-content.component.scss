@@ -12,10 +12,8 @@
 
 .body-content__content-title {
     margin-bottom: 20px;
-    font-size: 1.75rem;
-    font-weight: 700;
-    line-height: 32.81px;
     color: $text-color-primary;
+    font: 700 1.75rem/32.81px Roboto; // font-weight font-size/line-height font-family.
 }
 
 .body-content__content-offers {
@@ -80,8 +78,6 @@
     transform: translate(-50%, -50%);
     width: 100%;
     height: 100%;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
     img{
         position: relative;
         width: 100%;
@@ -106,28 +102,23 @@
 .body-content__content-offers-city,
 .body-content__content-offers-price {
     color: $text-color-white;
-    font-weight: 700;
 }
 
 .body-content__content-offers-city {
-    font-size: 1.75rem;
     margin-bottom: 9px;
-    line-height: 32.81px;
+    font:700 1.75rem/32.81px Roboto; // font-weight font-size/line-height font-family.
 }
 
 .body-content__content-offers-price--label {
-    font-size: 1.25rem;
-    line-height: 23.44px;
+    font:700 1.25rem/23.44px Roboto; // font-weight font-size/line-height font-family.
 }
 
 .body-content__content-offers-price--fee {
-    font-size: 1.375rem;
-    line-height: 25.78px;
+    font:700 1.375rem/25.78px Roboto; // font-weight font-size/line-height font-family.
 }
 
 .body-content__content-offers-price--cents {
-    font-size: 1rem;
-    line-height: 18.75px;
+    font:700 1rem/18.75px Roboto; // font-weight font-size/line-height font-family.
 }
 
 .body-content__content-banner {
@@ -135,9 +126,8 @@
     position: relative;
     border-radius: 16px;
     display: flex;
-    background-image: linear-gradient(to right, $gradient-color-first, $gradient-color-second, $gradient-color-third);
     width: 100%;
-    background-color: $gradient-color-second;
+    background: $gradient-color-second linear-gradient(to right, $gradient-color-first, $gradient-color-second, $gradient-color-third); // background-color background-image
 }
 
 .body-content__content-banner-image {
@@ -166,23 +156,17 @@
 }
 
 .body-content__content-banner-text--description {
-    font-size: 1.125rem;
-    font-weight: 400;
-    line-height: 21.09px;
+    font:400 1.125rem/21.09px Roboto; // font-weight font-size/line-height font-family.
 }
 
 .body-content__content-banner-text--title {
-    font-size: 2.5rem;
-    font-weight: 700;
-    line-height: 46.88px;
+    font:700 2.5rem/46.88px Roboto; // font-weight font-size/line-height font-family.
 }
 
 .body-content__content-banner-text--subtitle {
     color: $text-color-light-blue;
-    font-size: 2.5rem;
-    font-weight: 400;
-    line-height: 46.88px;
     margin-bottom: 30.45px;
+    font:400 2.5rem/46.88px Roboto; // font-weight font-size/line-height font-family.
 }
 
 // Media Queries
@@ -276,8 +260,6 @@
     .body-content__content-banner-image {
         top: -400px;
         left: -80px;
-        background-size: inherit;
-        background-position: center;
     }
 }
 
@@ -285,8 +267,6 @@
     .body-content__content-banner-image {
         top: -400px;
         left: -160px;
-        background-size: inherit;
-        background-position: 75% 55%;
     }
 }
 
@@ -308,14 +288,12 @@
     }
 
     .body-content__content-banner-text--title {
-        font-size: 2.125rem;
-        line-height: 39.84px;
+        font: 700 2.125rem / 39.84px Roboto; // font-weight font-size/line-height font-family.
     }
 
     .body-content__content-banner-text--subtitle {
-        font-size: 2.125rem;
-        line-height: 39.84px;
         margin-bottom: 24px;
+        font: 400 2.125rem / 39.84px Roboto; // font-weight font-size/line-height font-family.
     }
 
     .body-content__content-banner-image {
