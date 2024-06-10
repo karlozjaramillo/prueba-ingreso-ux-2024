@@ -78,7 +78,8 @@
     transform: translate(-50%, -50%);
     width: 100%;
     height: 100%;
-    img{
+
+    img {
         position: relative;
         width: 100%;
         height: 100%;
@@ -106,19 +107,19 @@
 
 .body-content__content-offers-city {
     margin-bottom: 9px;
-    font:700 1.75rem/32.81px Roboto; // font-weight font-size/line-height font-family.
+    font: 700 1.75rem/32.81px Roboto; // font-weight font-size/line-height font-family.
 }
 
 .body-content__content-offers-price--label {
-    font:700 1.25rem/23.44px Roboto; // font-weight font-size/line-height font-family.
+    font: 700 1.25rem/23.44px Roboto; // font-weight font-size/line-height font-family.
 }
 
 .body-content__content-offers-price--fee {
-    font:700 1.375rem/25.78px Roboto; // font-weight font-size/line-height font-family.
+    font: 700 1.375rem/25.78px Roboto; // font-weight font-size/line-height font-family.
 }
 
 .body-content__content-offers-price--cents {
-    font:700 1rem/18.75px Roboto; // font-weight font-size/line-height font-family.
+    font: 700 1rem/18.75px Roboto; // font-weight font-size/line-height font-family.
 }
 
 .body-content__content-banner {
@@ -156,17 +157,17 @@
 }
 
 .body-content__content-banner-text--description {
-    font:400 1.125rem/21.09px Roboto; // font-weight font-size/line-height font-family.
+    font: 400 1.125rem/21.09px Roboto; // font-weight font-size/line-height font-family.
 }
 
 .body-content__content-banner-text--title {
-    font:700 2.5rem/46.88px Roboto; // font-weight font-size/line-height font-family.
+    font: 700 2.5rem/46.88px Roboto; // font-weight font-size/line-height font-family.
 }
 
 .body-content__content-banner-text--subtitle {
     color: $text-color-light-blue;
     margin-bottom: 30.45px;
-    font:400 2.5rem/46.88px Roboto; // font-weight font-size/line-height font-family.
+    font: 400 2.5rem/46.88px Roboto; // font-weight font-size/line-height font-family.
 }
 
 // Media Queries
@@ -174,6 +175,14 @@
     .body-content {
         width: 100%;
         padding: 36px 6.667% 60px 6.667%;
+    }
+
+    .body-content__content-offers-1,
+    .body-content__content-offers-3 {
+
+        img.body-content__content-offers__background {
+            left: 0px;
+        }
     }
 }
 
@@ -237,12 +246,16 @@
     .body-content__content-offers-3 {
         width: 100%;
         max-width: 614px;
-        min-height: 258px;
+        max-height: 258px;
     }
 
     .body-content__content-offers-1,
     .body-content__content-offers-3 {
         margin-bottom: 20px;
+
+        img.body-content__content-offers__background {
+            left: 0px;
+        }
     }
 
     .body-content__content-offers-2 {
