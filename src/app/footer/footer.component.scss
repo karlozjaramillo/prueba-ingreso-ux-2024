@@ -46,16 +46,13 @@
 
     li {
         list-style: none;
-        margin-left: 10px;
-        margin-bottom: 14px;
-    }
+        margin: 0 0 14px 10px;
+       }
 
     a {
         text-decoration: none;
         color: $text-color-primary;
-        font-size: 1.125rem;
-        font-weight: 400;
-        line-height: 21.09px;
+        font: 400 1.125rem / 21.09px Roboto; // font-weight font-size / line-height font-family.
 
         &:hover {
             font-weight: 700;
@@ -64,19 +61,13 @@
 }
 
 .footer__links-title {
-    font-size: 1.25rem;
-    font-weight: 700;
-    line-height: 23.44px;
     margin-bottom: 20px;
+    font: 700 1.25rem / 23.44px Roboto; // font-weight font-size / line-height font-family.
 }
 
 .footer__links-follow-us {
-    font-size: 1.125rem;
-    font-weight: 700;
-    line-height: 21.09px;
-    margin-left: 10px;
-    margin-top: 51px;
-    margin-bottom: 18px;
+    margin: 51px 0 18px 10px;
+    font: 700 1.125rem / 21.09px Roboto; // font-weight font-size / line-height font-family.
 }
 
 .footer__social-media {
@@ -172,11 +163,8 @@
     }
 
     .footer__social-media-mobile__title {
-        font-size: 1.125rem;
-        font-weight: 700;
-        margin-top: 64.32px;
-        line-height: 21.09px;
-        margin-bottom: 15px;
+        font: 700 1.125rem / 21.09px Roboto; // font-weight font-size / line-height font-family.
+        margin: 64.32px 0 15px 0;
     }
 
     .footer__social-media-mobile__icons {
@@ -207,13 +195,11 @@
         flex-direction: column;
 
         li {
-            margin-left: 24px;
-            margin-bottom: 13px;
+            margin: 0 0 13px 24px;
         }
 
         a {
-            font-size: 1rem;
-            line-height: 18.75px;
+            font: 1rem / 18.75px Roboto; // font-size / line-height font-family.
         }
 
         div {
@@ -240,8 +226,7 @@
 
 @media (max-width:480px) {
     .footer__links-title {
-        font-size: 1.125rem;
-        line-height: 21.09px;
+        font: 700 1.125rem / 21.09px Roboto; // font-weight font-size / line-height font-family.
     }
 
     .footer__logo {
