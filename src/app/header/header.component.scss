@@ -2,19 +2,27 @@
 
 // Header component
 .header {
+    overflow: hidden;
+    position: relative;
     display: flex;
     align-items: center;
     width: 100%;
     height: auto;
-    min-height: 448px;
-    background-image: url("../../assets/images/main-banner.jpg");
-    background-size: cover;
-    background-position-y: -10px;
-    padding: 0 96px;
+    max-height: 448px;
+
+    img {
+        position: relative;
+        top: 250px;
+        width: 100%;
+        height: 140vh;
+        object-fit: cover;
+    }
 }
 
 .header__content {
-    max-width: 564px;
+    position: absolute;
+    padding: 0 6.67%;
+    max-width: 750px;
 }
 
 .header__content-title,
@@ -53,31 +61,63 @@
 }
 
 // Media Queries
+@media (min-width:1440px) {
+    .header {
+        img {
+            // left: 0%;
+        }
+    }
+}
+
+@media (max-width:1440px) {
+    .header {
+        img {
+            // left: -15%;
+        }
+    }
+}
+
 @media (max-width:1200px) {
     .header {
-        background-position-x: 50%;
-        background-size: 130% 210%;
+        img {
+            // left: -30%;
+        }
+    }
+}
+
+@media (max-width:992px) {
+    .header {
+        img {
+            // left: -40%;
+        }
     }
 }
 
 @media (max-width:768px) {
     .header {
-        padding: 0 14px;
-        background-size: 160% 210%;
+        img {
+            // left: -70%;
+        }
+    }
+
+    .header__content {
+        padding: 0 1.823%;
     }
 }
 
 @media (max-width:640px) {
     .header {
-        background-position-x: 50%;
-        background-size: 180% 210%;
+        img {
+            // left: -95%;
+        }
     }
 }
 
 @media (max-width:480px) {
     .header {
-        background-position-x: 50%;
-        background-size: 280% 212%;
+        img {
+            // left: -150%;
+        }
     }
 
     .header__content-title {
@@ -91,7 +131,5 @@
 
 @media (max-width:414px) {
     .header {
-        background-position-x: 48%;
-        background-size: 345% 212%;
     }
 }
