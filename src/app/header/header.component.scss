@@ -12,9 +12,9 @@
 
     img {
         position: relative;
-        top: 250px;
+        top: 245px;
         width: 100%;
-        height: 140vh;
+        height: 950px;
         object-fit: cover;
     }
 }
@@ -131,5 +131,8 @@
 
 @media (max-width:414px) {
     .header {
+        img{
+            // left: 0px;
+        }
     }
 }
