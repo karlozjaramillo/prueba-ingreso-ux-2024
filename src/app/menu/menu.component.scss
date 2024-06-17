@@ -177,6 +177,12 @@
 
     ul {
         list-style-type: none;
+
+        li:last-child {
+            a {
+                border-bottom: none;
+            }
+        }
     }
 }
 
